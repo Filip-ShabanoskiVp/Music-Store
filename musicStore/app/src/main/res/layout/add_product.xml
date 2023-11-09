@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="New Music product"
+              android:layout_marginTop="10dp"
+              android:layout_centerHorizontal="true"
+              android:textSize="16sp"
+              android:id="@+id/textNewProduct"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+              android:layout_below="@+id/textNewProduct"
+              android:id="@+id/editName"
+              android:hint="Name"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+              android:layout_below="@+id/editName"
+              android:id="@+id/editDescription"
+              android:hint="Description"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+              android:layout_below="@+id/editDescription"
+              android:id="@+id/editDate"
+              android:inputType="textMultiLine"
+              android:hint="Date"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+              android:layout_below="@+id/editDate"
+              android:inputType="number"
+              android:id="@+id/editPrice"
+              android:hint="Price"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+              android:layout_below="@+id/editPrice"
+              android:id="@+id/editImage"
+              android:inputType="textMultiLine"
+              android:hint="Image link"/>
+    <Button android:layout_width="match_parent"
+            android:id="@+id/btnAddProduct"
+            android:layout_below="@+id/editImage"
+            android:text="Add"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="9dp"
+            android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
+</ScrollView>

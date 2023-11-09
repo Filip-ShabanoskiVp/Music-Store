@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "844167816016",
+    "firebase_url": "https://musicstore-7d7e7.firebaseio.com",
+    "project_id": "musicstore-7d7e7",
+    "storage_bucket": "musicstore-7d7e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844167816016:android:2c724f4b2c5fe15fa3c255",
+        "android_client_info": {
+          "package_name": "com.musicStore.LoginPage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844167816016-51m3n894ong68n4ufmtopbr6m1pvuid0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9RiaIAWbEFqOdOW4_uSc6Cx4EKMZRNPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844167816016-51m3n894ong68n4ufmtopbr6m1pvuid0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

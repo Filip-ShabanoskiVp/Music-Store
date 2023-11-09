@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:id="@+id/linearLayout3">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar4"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorError"
+            tools:ignore="MissingConstraints"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <TextView
+            android:text="Payment Page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            tools:ignore="MissingConstraints" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="300dp"
+            android:layout_marginTop="72dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="Total price: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="72dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="28dp" app:layout_constraintEnd_toStartOf="@+id/textViewTotalPrice"/>
+    <TextView
+            android:text="0.0 Eur"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTotalPrice"
+            tools:ignore="MissingConstraints" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="40dp"
+            android:layout_marginTop="68dp" app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_2"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="433dp"
+            tools:listitem="@layout/list_products"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="44dp" app:layout_constraintTop_toBottomOf="@+id/toolbar4"/>
+    <Button
+            android:text="Pay"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPay"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" tools:ignore="MissingConstraints"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/footer_layout"/>
+    <LinearLayout
+            android:id="@+id/footer_layout"
+            android:layout_width="424dp"
+            android:layout_height="99dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            tools:ignore="MissingConstraints"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+    >
+
+        <TextView
+                android:text="Copyright © Music Store, Inc."
+                android:textColor="?attr/colorAccent"
+                android:id="@+id/footer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                android:layout_marginRight="5dip"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

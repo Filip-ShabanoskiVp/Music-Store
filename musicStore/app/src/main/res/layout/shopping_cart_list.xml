@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="150dp" android:id="@+id/ConstraintLayout7">
+    <ImageView
+            android:layout_width="62dp"
+            android:layout_height="71dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            android:id="@+id/imageShoppingCartViewList"
+            tools:ignore="MissingConstraints" app:layout_constraintVertical_bias="0.34"/>
+    <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:id="@+id/textShoppingCartViewName"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toEndOf="@+id/imageShoppingCartViewList"
+            android:layout_marginStart="20dp" android:layout_marginTop="12dp"/>
+    <TextView
+            android:text="Description"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+
+            android:id="@+id/textShoppingCartViewDescription"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toEndOf="@+id/imageShoppingCartViewList"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/textShoppingCartViewName"/>
+    <TextView
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:id="@+id/textShoppingCartViewDate"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="96dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textShoppingCartViewDescription"/>
+    <TextView
+            android:text="Price"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+
+            android:id="@+id/textShoppingCartViewPrice"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toEndOf="@+id/textShoppingCartViewDate"
+            android:layout_marginStart="96dp" android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="Cancel"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
